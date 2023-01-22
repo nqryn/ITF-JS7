@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Acesta este un comentariu! Nu va fi interpretat de catre browser. -->
+        <!--
+            Aici in head putem avea:
+            - meta-informatii
+            - titlul paginii
+            - legaturile catre scripturile JS si stilurile CSS
+        -->
+        <style>
+            body {
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            Aici in body avem continutul paginii, adica ceea ce vedem noi utilizatorii in browser.
+        -->
+        <p style="background:pink;">
+            <!-- strong este un element de tip INLINE, adica "in linie" - adica se integreaza in elementul parinte
+            si ocupa doar cat spatiu are nevoie pentru continutul sau -->
+            My cat is <strong>very</strong> grumpy!
+        </p>
+        <p style="background:green;">Alt paragraf</p>
+        <p>Ultimul paragraf</p>
+        <!-- Paragrafele sunt elemente de tip BLOCK, adica ocupa toata latimea paginii, si obliga elementele 
+                de dinainte si de dupa sa fie pe linii diferite -->
+        <p style="background:red;">
+            Aici avem un paragraf
+            <p style="background:cyan;">
+                Cu un mic paragraf
+            </p>
+            In interiorul lui
+        </p>
+
+        <div style="background: pink;">
+            Acesta este un div,
+            este un element de tip block, care actioneaza ca un container.
+            <span style="background-color: white;"> Iar aici avem un span, care este un container de tip inline. </span>
+            Dupa span, putem scrie ce mai dorim noi in continuare!
+        </div>
+
+        <br />
+
+        <div style="background-color: orange;">
+            Big div Big div Big div Big div Big div Big div Big div Big div 
+            <div style="width: 50%; background-color: aqua; float: left;">
+                Salut, lume!
+            </div>
+            <div style="width: 50%; background-color: yellow; float: right;">
+                Hello, world!
+            </div>
+            Done done done done done done done
+        </div>
+
+    </body>
+</html>

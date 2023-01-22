@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            a = anchor
+            tagul folosit pentru a face linkuri (hyperlinks)
+            - are un atribut numit href, unde punem destinatia la care vrem sa ajungem
+            - in href putem pune mai multe valori:
+                - link complet (full path) https://www.lipsum.com
+                - link relativ: incepe de obicei cu / si reprezinta un link relativ la site-ul curent,
+                    adica daca eu sunt pe https://siteulmeu.ro/ceva si accesez un element a cu href="/hello"
+                    o sa fiu redirectionat catre https://siteulmeu.ro/hello
+                - link in interiorul aceleiasi pagini: cu #id element
+        -->
+        <a href="https://www.lipsum.com">Da click aici sa mergi la LIpsum!</a>
+        <p>
+            Aici avem linkuri in pagina
+        </p>
+        <a href="#h1">Mergi la H1</a>
+        <br/>
+        <a href="#h3">Mergi la H3</a>
+        <br/>
+        <a href="#h5">Mergi la H5</a>
+        <br/>
+        <a href="#h6">Mergi la H6</a>
+
+        
+        <br/>
+        <br/>
+
+        <h1 id="h1">Heading H1</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        <h2 id="h2">Heading H2</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        <h3 id="h3">Heading H3</h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        <h4 id="h4">Heading H4</h4>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        <h5 id="h5">Heading H5</h5>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        <h6 id="h6">Heading H6</h6>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis iste eum animi. Blanditiis odit pariatur dicta rem, voluptatem fugiat nemo! At ad maiores excepturi officia culpa, non porro molestiae perferendis?
+        
+        <!-- img 
+            tag empty, adica nu are continut propriu-zis, punem doar imaginea in atribute:
+            - src: aici punem sursa imaginii (url, sau cale - path)
+            - alt: alternative text, acesta va fi afisat daca nu se poate afisa imaginea,
+                DAR este foarte important si pentru accesibilitate, si pentru SEO (search engine optimization)
+            -width si height : setam dimensiunile imaginii, altfel aceasta va fi randata la dimensiunile originale -->
+        <div>
+            <img src="https://www.bebecul.ro/wp-content/uploads/2019/04/micul-iepuras-bebe.jpg" 
+                alt="Iepuras cu morcov"
+                width="50%">
+            <img src="pisica.jpg" alt="Pisica Marie" style="border: 2px solid red;">
+        </div>
+
+    </body>
+</html>

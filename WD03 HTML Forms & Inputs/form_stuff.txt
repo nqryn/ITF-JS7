@@ -1,0 +1,8 @@
+#no language
+
+Formular de comanda, cu mai multe sectiuni (fieldsets)
+
+1. Date personale (nume, email, data nasterii, cetatenia, adresa)
+2. Metoda de livrare (radio buttons)
+3. Mentiuni speciale (textarea)
+4. Accept conditii, abonare newsletter, etc (checkbox)

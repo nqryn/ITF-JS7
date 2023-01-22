@@ -1,0 +1,45 @@
+.box {
+  display: flex;
+  border: 1px solid grey;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.box div {
+  padding: 5px;
+  background-color: rgb(133, 207, 253);
+  flex-basis: 200px;
+  flex-shrink: 0;
+  flex: 1;
+}
+
+.box div:nth-child(1) {
+  background-color: aqua;
+}
+
+.box div:nth-child(2) {
+  background-color: rgb(253, 253, 142);
+}
+
+.box div:nth-child(3) {
+  background-color: rgb(255, 70, 70);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column > div {
+  font-size: 4vh;
+  color: white;
+  background: royalblue;
+  margin: 0.1em;
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  flex: 1;
+}

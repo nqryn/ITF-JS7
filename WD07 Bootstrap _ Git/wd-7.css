@@ -1,0 +1,19 @@
+.container {
+  /* background-color: cadetblue; */
+}
+
+.container-fluid {
+  /* background-color: antiquewhite; */
+}
+
+.container-md {
+  /* background-color: coral; */
+}
+.col,
+div[class*="col"] {
+  border: 1px dashed;
+}
+
+.btn-primary {
+  /* background-color: grey; */
+}

@@ -1,0 +1,25 @@
+.box {
+    display: flex;
+    border: 2px solid ;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.box div {
+    padding: 5px;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.box div:nth-child(1){
+    background-color: aqua;
+}
+
+.box div:nth-child(2){
+    background-color: rgb(83, 132, 132);
+}
+
+.box div:nth-child(3){
+    background-color: rgb(178, 111, 188);
+    flex-shrink: 2;
+}

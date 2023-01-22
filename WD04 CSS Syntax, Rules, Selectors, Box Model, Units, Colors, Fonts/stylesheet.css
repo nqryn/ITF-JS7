@@ -1,0 +1,30 @@
+#first {
+    width: 80%;
+    margin:auto;
+    height:100%;
+}
+
+html, body {
+    height: 100vh;
+    color:green;
+}
+
+
+.inner {
+    border: 2px dashed red;
+    padding: 10px 20px 30px 40px;
+    background-color: bisque;
+    margin: 10px 0;
+    
+}
+
+#lastdiv > * {
+    margin-top: 15px;
+}
+
+#lastdiv {
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 50px;
+    border-width: 5px;
+    border-style: dotted;
+}

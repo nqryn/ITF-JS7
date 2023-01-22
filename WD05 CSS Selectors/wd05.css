@@ -1,0 +1,36 @@
+.third-element {
+  background-color: antiquewhite;
+  padding: 50px;
+}
+
+p {
+  width: 80%;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+#second-element {
+  background-image: url("https://png.pngtree.com/png-clipart/20220215/ourmid/pngtree-blue-sky-and-white-clouds-png-image_4391818.png");
+  background-size: contain;
+  opacity: 60%;
+}
+
+* {
+  color: #e20707;
+}
+
+a {
+  display: block;
+}
+
+a[href] {
+  color: blue;
+}
+
+a[href="#"] {
+  color: coral;
+}
+a[href="#"],
+a[href*="george"] {
+  color: chartreuse;
+}

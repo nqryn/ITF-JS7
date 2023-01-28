@@ -1,0 +1,16 @@
+div { 
+    margin: 10px
+}
+
+.aside {
+    padding: 20px;
+}
+
+.contact,.languages,.hobbies {
+    padding: 5px;
+}
+
+.rside {
+    background-color: rgb(198, 237, 235);
+    color: rgb(111, 79, 73);
+}

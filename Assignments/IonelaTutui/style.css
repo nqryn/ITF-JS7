@@ -1,0 +1,7 @@
+img {
+    max-width: 100%; height: auto;
+    border-radius: 50%;
+}
+.left {
+    background-color: rgb(185, 181, 181);
+}

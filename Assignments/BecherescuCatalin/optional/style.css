@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(240, 237, 237, 0.849);
+}
+
+.first {
+    /* background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 20%;
+    height: 100%; */
+    color: rgb(27, 26, 26);
+    padding: 20%;   
+    align-items: center;
+}
+.fcard {
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+.card {
+    padding: 10px;
+    margin: 10px;
+}

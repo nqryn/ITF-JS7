@@ -1,0 +1,17 @@
+.left {
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+
+}
+.display-6 {
+    color: lightgray;
+}
+.display-1
+{
+    color: lightgray;
+}
+.right {
+    margin-top: 20px;
+    color: rgb(70, 69, 69);
+}

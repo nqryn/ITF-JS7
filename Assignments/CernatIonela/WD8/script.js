@@ -7,6 +7,13 @@
 // Input: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
 // Expected Result: true
 
+var upperCaseString = "The quick brown fox jumps over the lazy dog"
+
+if(upperCaseString.toUpperCase()){
+    console.log(true)
+}else{
+    console.log(false)
+}
 
 
 
@@ -17,6 +24,9 @@
 // Input: noSpacesString = "The quick brown fox jumps over the lazy dog"
 // Expected Result: "Thequickbrownfoxjumpsoverthelazydog"
 
+var noSpacesString = "The quick brown fox jumps over the lazy dog"
+
+console.log(noSpacesString.replace(/\s/g, ''));
 
 
 // Task 3
@@ -26,6 +36,9 @@
 // Input: a = 2 , b = 3
 // Expected Result: sum = 5
 
+var a = 2;
+var b = 3;
+console.log(a + b);
 
 
 // Task 4
@@ -35,6 +48,8 @@
 // Input: n = 9
 // Expected Result: sqrt = 3
 
+var n = 9;
+console.log(Math.sqrt(n));
 
 
 // Task 5
@@ -44,6 +59,9 @@
 // Input: year = 1990
 // Expected Result: "You are ${x} years old"
 
+var year = 1987;
+var currentYear = 2023;
+console.log(`You are ${2023 - year} years old`);
 
 
 // Task 6
@@ -53,6 +71,9 @@
 // Input: count = 5, multiplyString = "Hello"
 // Expected Result: "HelloHelloHelloHelloHello"
 
+var count = 5;
+var multiplyString = "Hello";
+console.log(multiplyString.repeat(count));
 
 
 // Task 7
@@ -62,6 +83,8 @@
 // Input: binaryString = "11111100110"
 // Expected Result: 2021
 
+var binaryString = "11111100110";
+console.log(parseInt(binaryString, 2));
 
 
 // TASK 8
@@ -74,6 +97,10 @@
 // Expected Result: 27
 
 
+var pow = 4;
+var nr = 2;
+console.log(Math.pow(4,2));
+
 
 // TASK 9
 // Reverse a string 
@@ -85,6 +112,10 @@
 // Expected Result: "yrotcaFtI"
 
 
+var revString = "alabala";
+console.log(revString.split("").reverse().join(""));
+
+
 
 // Task 10
 // Remove a certain letter from a string
@@ -92,3 +123,7 @@
 // Example:
 // Input: letter = "a" removeString = "Today was a good day"
 // Expected Result: Tody ws good dy
+
+var letter = "a";
+var removeString = "Today was a good day";
+console.log(removeString.replaceAll('a',''));

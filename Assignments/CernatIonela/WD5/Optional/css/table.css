@@ -1,0 +1,223 @@
+tr,td {
+  text-align: right;
+  padding-left: 1vw;
+  align-content: right;
+  text-align: right;
+  column-width: 6vw;
+}
+
+th {
+  text-align: left;
+}
+
+
+.cl6 :nth-child(2),
+.cl6 :nth-child(5) {
+  background-color: rgb(255, 68, 0);
+}
+.cl6 :nth-child(3),
+.cl6 :nth-child(4) {
+  background-color: rgb(255, 189, 165);
+}
+
+.cl6 :nth-child(6) {
+  background-color: rgb(252, 142, 102);
+}
+
+.cl6 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl7 :nth-child(2),
+.cl7 :nth-child(4),
+.cl7 :nth-child(5),
+.cl7 :nth-child(6) {
+  background-color: rgb(255, 189, 165);
+}
+
+.cl7 :nth-child(3) {
+  background-color: rgb(255, 68, 0);
+}
+
+.cl7 :nth-child(7) {
+  background-color: rgb(255, 216, 200);
+}
+
+.cl7 :nth-child(8) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl8 :nth-child(2),
+.cl8 :nth-child(4),
+.cl8 :nth-child(5),
+.cl8 :nth-child(6) {
+  background-color: rgb(252, 142, 102);
+}
+
+.cl8 :nth-child(3) {
+  background-color: rgb(255, 189, 165);
+}
+.cl8 :nth-child(7) {
+  background-color: rgb(255, 216, 200);
+}
+
+
+
+.cl9 :nth-child(2), 
+.cl9 :nth-child(4), 
+.cl9 :nth-child(5), 
+.cl9 :nth-child(6), 
+.cl9 :nth-child(8) {
+  background-color: rgb(253, 240, 234);
+}
+
+.cl9 :nth-child(3) {
+  background-color: rgb(253, 217, 205);
+}
+
+
+
+.cl10 :nth-child(5) {
+  background-color: rgb(255, 216, 200);
+}
+
+
+
+
+.cl11 :nth-child(2), 
+.cl11 :nth-child(3), 
+.cl11 :nth-child(4), 
+.cl11 :nth-child(5), 
+.cl11 :nth-child(6),
+.cl11 :nth-child(8) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl12 :nth-child(2),
+.cl12 :nth-child(3),
+.cl12 :nth-child(5),
+.cl12 :nth-child(6),
+.cl12 :nth-child(8) {
+  background-color: rgb(250, 217, 205);
+}
+
+.cl12 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+.cl12 :nth-child(4) {
+  background-color: rgb(255, 216, 200);
+}
+
+
+
+.cl13 :nth-child(2),
+.cl13 :nth-child(4),
+.cl13 :nth-child(5),
+.cl13 :nth-child(6),
+.cl13 :nth-child(8) {
+  background-color: rgb(253, 202, 182);
+}
+
+.cl13 :nth-child(3) {
+  background-color: rgb(255, 189, 165);
+}
+
+.cl13 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl14 :nth-child(2),
+.cl14 :nth-child(3),
+.cl14 :nth-child(4),
+.cl14 :nth-child(5),
+.cl14 :nth-child(6),
+.cl14 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+.cl14 :nth-child(8) {
+  background-color: rgb(250, 217, 205);
+}
+
+
+
+.cl15 :nth-child(4) {
+  background-color: rgb(253, 202, 182);
+}
+
+
+
+.cl16 :nth-child(even) {
+  background-color: rgb(253, 202, 182);
+}
+
+.cl16 :nth-child(3),
+.cl16 :nth-child(5) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl17 :nth-child(4) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl18 :nth-child(3) {
+  background-color: rgb(253, 202, 182);
+}
+
+.cl18 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+.cl18 :nth-child(6),
+.cl18 :nth-child(8) {
+  background-color: rgb(252, 234, 226);
+}
+
+
+
+.cl19 :nth-child(4) {
+  background-color: rgb(252, 193, 170);
+}
+
+.cl19 :nth-child(7) {
+  background-color: rgb(253, 202, 182);
+}
+
+.cl19 :nth-child(3) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl20 :nth-child(7) {
+  background-color: rgb(255, 216, 200);
+}
+
+
+
+.cl22 :nth-child(5) {
+  background-color: rgb(255, 219, 205);
+}
+
+.cl22 :nth-child(7) {
+  background-color: rgb(253, 240, 234);
+}
+
+
+
+.cl23 :nth-child(7) {
+  background-color: rgb(255, 216, 200);
+}

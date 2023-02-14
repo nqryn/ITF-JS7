@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        margin: auto;
+        width: 70%;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+      }
+
+      .fieldset {
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><h2>JavaScript - Formular de Înscriere</h2></legend>
+
+        <label for="Email">Email*</label>
+        <input type="email" name="Email" id="Email" size="70" />
+        <p>[Te rugăm să te asiguri că email-ul e corect]</p>
+        <br /><br />
+
+        <label for="telefon">Telefon*</label>
+        <input type="tel" name="telefon" id="telefon" size="70" />
+        <p>[Te rugăm să te asiguri că numarul e corect]</p>
+        <br /><br />
+
+        <label for="prenume">Prenume*</label>
+        <input type="text" name="prenume" id="prenume" size="70" />
+        <br /><br />
+        <label for="nume">Nume*</label>
+        <input type="text" name="nume" id="nume" size="70" />
+        <br /><br />
+
+        <label for="codpromo">Cod promotional</label>
+        <input type="text" name="codpromo" id="codpromo" size="70" />
+        <br />
+
+        <label for="checkbox"
+          >Accept termenii de prelucrare a datelor cu caracter personal*</label
+        >
+        <input type="checkbox" name="checkbox" id="checkbox" />
+      </fieldset>
+      <br />
+      <div class="container">
+        <div class="center">
+          <input type="submit" value="Mă înscriu" id="btn" />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h2>Te vom contacta în maxim 3 zile pentru stabilirea detaliilor.</h2>
+    </form>
+  </body>
+</html>

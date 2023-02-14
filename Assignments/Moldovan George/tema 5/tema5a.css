@@ -1,0 +1,42 @@
+html {
+  margin: 0;
+  background-color: rgb(39, 66, 67);
+  box-sizing: border-box;
+}
+
+main h1 {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 8vh;
+  margin-bottom: 40px;
+  color: antiquewhite;
+  font-size: 2.5em;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+/*=======================================
+===============  Table  =================
+========================================*/
+
+div [class="table"] {
+  color: rgb(0, 0, 0);
+  width: 60%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 20px;
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+
+.table-head > th {
+  padding: 7px 0;
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgb(124, 234, 124);
+}

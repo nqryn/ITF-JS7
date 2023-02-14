@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music</title>
+    <style>
+      header {
+        background-color: rgb(221, 204, 236);
+        border: 2px solid rgb(87, 41, 87);
+      }
+      button {
+        float: right;
+        background-color: rgb(158, 158, 223);
+      }
+      nav {
+        background-color: rgb(199, 159, 236);
+        border: 2px solid rgb(87, 41, 87);
+      }
+      main {
+        background-color: beige;
+        border: 2px solid rgb(87, 41, 87);
+      }
+      article {
+        background-color: beige;
+        border: 2px solid rgb(87, 41, 87);
+      }
+      aside {
+        float: right;
+        background-color: rgb(199, 159, 236);
+        border: 1px solid rgb(11, 6, 44);
+        width: 40%;
+      }
+      footer {
+        background-color: rgb(184, 197, 197);
+        border: 2px solid rgb(87, 41, 87);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhMWFhMXGBYXGBcWFxgZFxgWGBYXGBoYIBYaHSggGxslHxYTITEhJSktLi4uGCAzODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS4tLS0tLS0tLS0tLS0vLS0vLTItLS0rLTAtLS0tLS0vLi0vLTUtLS0tLS0tLS0tLf/AABEIAKoBKQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCAwcGAQj/xABFEAACAQIEAggCBQoDCAMAAAABAgADEQQSITEFQQYTIjJRYXGBB5EUQlKhsSMzU2JygpKywdGT0uEVJENzosLi8JSj8f/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EADIRAAICAQIDBgYBBAMBAAAAAAABAhEDITESQVEEYXGBkfATobHB0fEiIzJS4RQkQgX/2gAMAwEAAhEDEQA/AO4xEQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBKri3H8NhrCtWVCdl1LEeOVQTbztaT8VXFNGdtlUsfRRc/hPz0atbHYm9i9aq+gvzOy67KoHsFnb2PsqztuTqK397GuHGpy1P0Bw/HU6yCpSdXQ7MpuPTyPlJc5HwZMVwnEU1xBUUKo1sbobWvrYEOtwdRqNPTrSNcXGxmPaMCxNcLuL2ZfPg+HTTuL2fhv6GUREwOcREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQCt6RqThMSBuaNUD1NNpyb4MotTGO+/V0iR5M7KoN/TOPedoqIGBB2IIPoZxz4LURRx2MoEdpEKnzNOrlOnqZ6PZZ/wDVzR8Pm6Y4q06nrvi5TBwOc7pVQj3DIf5pM+GnEzXwFO5u1MmkfRQCv/QySv8AjHigmAC86lVFHsGc/wAv3yl+B9ewxNK+n5NwPAnOrfgkrwuXY76S/CO6MeLsj7pWdWiInAcIiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCImJNtTAMolbguL0qtRqdNsxUAkju720PO2m3jLKVjKMlcXZacJQdSVPvNdSoFBLEADcnQD3mQN9prrqpUhrZSCDfax3lAlcJexUsjbhNagGo7dPSzAi910J8ryJT4TTFi+InT+XvzPSzlXDqH0TpNVXZMVRZ19WCu3/VQqGdMTFoQCDcHmASPmBOd/FSv9Gr4DiShrUK3V1bI1zSqanU25CoB5uJ2dkmuKUP8otee6+aRhKLWtHnPjbxvPiqeGU3FFMza/8AEqWNiPJQh/fM3/A+sTiaw5dSb+vWJb+s5lxHiTYrEVK9RgHquzka6XOi3tsBYDyE658DMCEXEVmYdopTXUX7ILN/Onynp9oisPZeDuS82/zZ6EZSXZpJbP8AJ1qIieGcAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiJ8gFfxniS4ekarKWAIFltuTYanYXtrPDYzH4rGC5/J0SbKovZj4Ad6q3kAfQT3GP4eKlN0Y5iykAtqAeRy7aG3KR+DonVo6As5RbsbEjxS+yhTplXQeE4u0YZZZcLlUa2XPr+j0+x58WDG8ijxTvd7K9qvbnrvptq6quFcKOHyVLZLsKbEm7kVLBTp2F7YpjLY76nlPS9UALs7HzLWHyWwmjH0Gem6s4S6mxH1TyOY+BsdhMcFi6bU6dQ2DOoNr3a9tVG5NjcWE2x444/4Lb2n9uSMM2Wef+o97rT1X35vZEhRTvdUBPiF/wC61vvmqtUZWVwtgbI1yBuewdL8yR+/5Tb9IZu6h9XOQfLVvmBPOdIOA4jE1qZ6xRSUC9iwKm5JIHNrZddNuXOZtxjcFb7tCMEIzyVlnwqnbevLalz6ffY9MiMBYZV1J5nUm58OZM5F8cukZyrgEYFjlqVbLsAbol7m1z2j6L4zovSHiVPDUmcsWqd1VLnVztdAbWG502n546VPUqOarKxuWLHNcZid/wBX02nd2Nx+PHifhrzNMXYZ5OzT7RTpdz1668kt/peqKHC02ZlVRdmIVRzJJsB8yJ+n+iXDEweDpYYVKRKrdzvd27Tnvai5NvICco+CnB1qYtqtVTnpU1q0VfQMGLIao07QW1hyu1+U7qSw1LKPVT+Oadf/ANPO5SWNbLV77+pyKSqvx+GRewNjR9QQh+YvPr0cysupDAg5amfQix7+kzfGqN61Ietv88gcaxmSk1SmKVVwBlQKCTqBfvXNr308J5Vo2hGc5JLdtb35dFufeH1aq5c17Mt9QzDNp9YXy7nTUacudgmKvpa555GDW9tD90qOCYhjRBq9UjksSq1SlrsxHZBNtCNLyyKlhzYeANN1/wCqx++Sic8EptNbOr5b8vfgZY3iKU6bObnKpbLs5sL2Cmxn3hWNNaktQoyZrnK/eAubfO1/QyPWpXUqdAQQe8igHlZgyyPg8Qx2O2jFbhQw0I0zp57LuPGSV+HH4ei1ve+VbV87fgX0SvTGG1zYjx2+8Er82E3jFrzOX9rQezbH2MGDhJEmImmvWVBmY2FwLnzIA+8iCpuia6bhhcEEHmDcfObIAiIgCIiAIiIAiIgCIiAIiIAiJ589K8OcQmHRs7MSpcdxWsbC/Mki2njIcktyspxjXE9z0ESM1Qk5U925Dy8z5cufgcupP22+7+0kmzHqS3fN/wBUd3/y99PISuwWJVKlWkLsc5qKE1OWprqdl7Yq7kDaOK069WlUFE9WxUhL6Ox9fqA/PUd208/0L4BUwbPVrtZnGRUBzE3OYmy7nTlewuZjKT4kkvM9DFjx/AnKc1elQ5t2tfS1pfO2iT0w4Vi8StMU8gUE5kDG97DKxY2DW10tpfnys+AYBcJRSkzBqmpbKLkkkk2AGYqL2v8AhLH8o+/YXwFi59Tsvtc+YgGnS02J5C7Ox8ebN6/OFiipvJz7yJdrnPAuz6cKd1Fc+969fpbtClWZxdLBbkXPaNwSCLA2FiCNzttPtSmii9Rrj9cgL6ZdF+6Q6GcVGTuK96i7FgRYOOarrkb6187TVx/FphcNWr/XSm7KWuzk20Fzc2zW8pdO1qc80oPR9+n5186s4v8AE3pmK2KqUqQPVUL0lymysw/ONawINwVFj9QeMqvhp0UfiWIIcuMPT1rNfU37tIMeZtr4AHnaeZbAsz2W7sbAWN2Z2P3sSR85+mOhvRulw7CU8PoXtnqbnPVIGZgvO1gBpsomkP4XNb/T8Fv+bky444n/AGx2Vdfr4/7PO9N+qwGIwWPUnqaROExAS/ZoOOxomyowJygakgTn/Sr4o1MQ7LhFGGoagMqgVnHiXGqei6jxMsfjj0gqV8TT4fSDZKeUuo3etUtkXKPBSth41NtBLz4OdE8GMOMXU7WJz1KbB7DqXRiMqjcNbKc179rlO2EIY8SyZFfJe359TKGWSlp79DnVDguPr/lOoxTX1zmlVa/71tZlhuL4/AOMlWvRIPdYNlPrTfQ+4n6UNNTtTLebb/N9Zp4jw9MQhStTpsh5MM3uDplPmNZlk7VKaqkdy7amuHJG16fLX7eJ4r4f/EVcd+RrHJiQCQFQlKoG5UakMOa+Govrb1HGeIJRTrKiZlBAP+7sTqbXuzATlnHuh30LFJWw7FqWYMrq4z03GoVrb+R5gG+2vTA74zCoadStTc5SzUwBZgCGXUrdb+fIThjkubg96s6Jdlx43DMn/Tk6e6a+Tfo3VPfRudQrIb5WFgbd6pSW9gdBqDuJmFBNxYnmwyNb3Uq0YTODUuKhOfUjqh9RNLX2m1lJ3Vz+0KRHyBmpwN109f0QfpHaIIN8wQHUHUAjV8j8wNGbzkbjeN6ijUqAXa2gOlySFFx2SRci9w3OZ4ylep2WAfIDls6AZG0JFypF2G4IFptxaM1KotLcowFrFcxBsSEuvzQessjogsanBtaaXyvr+69aI/R+maeHpKDcimt8pJ1bXZb6C9tUO28sK1VnRlBBuCAfA8mzJe1jY6qsi4Ciq00UCyKqixsctlG/eUHxPYmWMrlKbPlLlVZlGpLGxICkk6/svfyk0ZZLnkb5t93X5GfCa5uWIOV1BuDnAYb3IuQbEd657O+kuKVVW2IPobzzPAq1R6YarT6uozMVBuGCnW9mK1NSTsT6S0BufEjxGYqPGxy1AfnIa1oyzY+GbT5dNV/v1LaJWJUN7Am/gGDH1K1LMPQGbRiyNCVv+tmpn2Vgb/ORRjwsnRPKY7pDihUZKWAZlBIFQubG2+iI1vnLnhXEOspI1TKlQjtJfZrkEWYBuXMCS4tImWOUVbLKIkbiFN3pVFptkqMjBG+yxUgN7GxlShJic+6EcJx+FasKiHt5QuZ1anmub1DZr7cgLnnbeev4Jfqu0xdg9ZSx3OWq49thoNpaSohOyyiIlSREjnErsDc+C9o+9tvefLu2wCDxOrfIaD1ufSBZzziXFcXxGo1CippUVYo9zbUGxDMNzp3Fvfz3l7wzoelKkwX86RcVGHaDjVSB9RQwBsNTzPKW+BpCliKifpB1qk75tFqjyF+qbTc1DJ9fFKgNz3Rc7WUAXuSdFFrnXwleBXbOeOBXxT1f08Ohhw7Eh6SOBlBUHLtlPNT4WNx7TZ9Np/bX5iea6LcYoYirXp02zKG61VsQvbPbsCLt27tcgd8aC09bLUawlxK0Qmrljlp200LnujyH2j5DQa3NxaZJSVLsTrbtO5F7euwHkLCfalULYAXP1VXew8tgBprtt5T4lAkhqhudwo7qny8T+sfa17SprfoYF3qd26r9ojtH9lTt6t4bc5mqJTF+Z3JuWY+u7ek+tXJNk15Fj3Qf+4+Q9yJktNUuxOvNjv6eQ8hJF8iFxNHKhwMppnOANXYAEMvgCVLgb6kHlKP4iFDw6qq6h+qOlySM6kMTvyGpMg9PKGLr1KaUqdRqJXQKNC9zct4aZbZrWuZd0cAaWBWi/aqKgLBdb21I8wB2b+QnO8judLZer7jfJhjLDFcSuVquifN6609a0OQ9AOj/AFnE8Pmy5ELVSFOt0UlfPRshv5TvKFVuFFzzt4+bHn6m85Z0dwyYfidLLTyU6gdNza5Ukb66kKLec6l1vJBe2l9lHv8APQX87TXHNTgpI4sMJQUoT3T1q6+aT+SOLdG+G/Sek2Jar/wXrVbeaFadPXyzqw/ZE9XwasMFxnEYdReljVGIpWIt163FVcx3JszG17WGk2YTgow/HXqOLri8OxGllNRDSzLl9KYbW/ekj4sYJxh6WOoj8vgqq1l86dwKi/smyk+SmdvFxyUXs0l+PD+W/dZaNU/H370PYhah7zBfJBc/xMNf4RMhg15jMfFiWt6Zr29pjwzHpiKNOtTN0qIrqfJgCPfWS5zGnE+WhXcawQrUHpkbqcvk26n2IEpvh8/+7sLggOSLG+6r/wC+8v8AiOMWjSeo5sqKWJ9BKboLhwuFBUkq7Fhfw0Xaw07JPvMZY28kZ9LR2Yp12LJF/wCUa8db+SR6SIibHCVeG4PSSu+IF+sqCxJNwBdTYDl3V+UnvRVu8oPqJtiS3ZeWScncndJLyWyIb4MHUE35X7X3ntD2Ikc0HU3tfzG9h47N8y8tIiwskkUoG4+Y9fFQtv4qY9ZoxmLK5QKbVL3NlyBRbQd9sn8LA+UvKlJW3APh5eh5Sk+hYnIzBqPXE2H5zIKY2BbvMdWOtwTYbS8Wnub45Rk9a8+/7LmQqfFap7LYWoBmy9p6TAnNlvkZi1gdOyTtLapWKqxszWBORNWYAfoqmovsADrIhwzqyhiooquq5e8+upJPV21vqFJMl/qn1ykZvfq27VhsMjESZJE5OF04peV/e/QrcDjXag1VKDCoc7LRLGhUOunY1Fjvc30+Um8KqVOpU1fyTtdmSoAwUsxbLnXKp3/0EkA3BHe8R+dW/mp7YPlsJkh0upa3ih6xfTKdR6KPeQ6fL306GU2nenvp7TIPGHKU1ZVprd07aa6XuSRYWWwNzm0FzfSScHiVbRlqo4AuuZ3FjezBlJDKbGx8jsQRIvEqZY0suXMao7dPsuCKdRrEHlpqC21xMOFL1dSqCRSNk7J7h1c5hm2U3PZDaMH37xmv4leHQt+tX9MV8myg/JlvI3BhembVT+dr7ZP09T9WTgan6jedyv3Wb8ZXU3Silq6qAXqtmY08vbqM4GrXJsw5Sm6opRZdRfdmP71v5bTBqNMd6x/bOb72JmlKlEgEJcHmKTEfMLabFq0V2yr+7b+kiitAY2nfKDfTQL2tPRb7TZ1zHuofVjlH9W+6VuPrKDcM5Qm+WkrFg1u+GANh47Dz1IO/B4wkEZGuNgqkAj7QZ7A38OXnuZ4dAU3SzjFHDtRNasBVV1YIoYE02OSpcrcgZSxBJAJQS+x2BStQejslRCt0sNGG45c7zynH+g303FDEO5RCFDUz2iculgVIyg87E8/GevXCD6xLDwOijyyjQj1vLS4UlT15lEnbtaFF0X6PUcFn6ktVqPYM7WCgD6oIFgL72ub78pfZKv2k/gP+aSAJo+mU/wBIn8Q/vKNtllFRVI+UqaoCSdd2Y7m3ieQGumwmOtTe6p4bM3rzUeW/jbY/QhY5n5ahfDwJ8W+4ffMnqEnKu/M8l/ufL58r0LBnC2VRc20UaWH9B/6PCFpa5mN2+4eg/rv+EABBf5k6kn+p8vYT7kLd7QfZ/v4+m3rJB8zlu7oPtePoP67esNlQWtcnluW/v7w1Qk5U1PMnZf7ny/CZU6QGu5O5O5/08osHFumPRtsLiAyFlQ9qmdDaxvYnmV7P+u86T0P6Tpi6YRiFxCjtJsDb6yjw8uXyJu+IYCnXQpVUMp5HkfEHkfMTmvSLoDWpHrMIXcA3CqwV18wSQD7ayiThpyORYZ4pOWJWn/529OX38TpOPwS1chPepuHRhurC4PsVLKfJjNuLwy1Uem4zI6sjA7FWBBHyJnEqfxI4lgjkxFMOo0tiEanU0/X0+ZBlivx0QDtYPX9WuP60xN4wcv7TojNPuPRfCqu1EYnhtU9vCVWyX+tRckg/MlvSos91iK6opd2CqouWYgAAcyTsJwnFdMsQ+MXiGHwvUFkFAmpmelVve13yoM1gul/+GDsDPeYbonjMWwfiWIOUG4o0iAPewyjw0uf1p0Zcdy45ur1fN3z0+e51wwQpOUqXq/JfocQxz8WqjD4fMuERga1W1s+U3yqT93nrsNfdYeiqKqIAFUBVA2AAsBMMDgqdFBTpIERdlUWH+p85KnPOV6Lb3qRmyqaUIKorZc+9vvfy0QiIlDAREQBERAEREASJUwgI7Onla6/w8vaxkuITolOiqqIV7w22JJsB/wA0dpfPNccrzFnA7TeF7khHsBfR17Li3LTzlvIlXBAggWsd1Iuh9U2+VpZMtxnj8B0oo4zE06VJXYqXcOwRSVCOpsyte92BGi+c9WjWNg1mP1ag1NuQYb89e1K3A8EoYdmNOiiM2hvcqfJah1TW2ltxoOcsb/V8fqVtb+ja38fre01yvG3/AE00u82zPG2vhppd/v31PvVqN6bJ50ybE/uWJ9xOeJ0exlbinW1AtWgrvZ6hSpT6k3yoKd9DYqLADUX8z0NTY2DFDyV9VPpr9yt7TKpbepT1+0t2t7jtD5W85OLNLFdJaqtft7rqjOM3G+/QpGwRwlSnUo01Sk7inVpU2sjF9EqLTICo4fKDY6gm9yBa3wXFqdVS1O7KCQWQrUAYbj8mza+UqOO49Ka9ZnZqVC1V7AVBm7tNNwSbtnN27OVb2BEm9HsNTpUVOGohaVS1Wy3ViXUG+R9tMotm0taJRvGpSu9v2+tV10a86taWyz+mL4P/AIdT/LNdPEIo0FS1726upp6dnabfpNu8rj90t/JcTViuJ0aSl6tRaaDc1OwBy+taY0nok/fkUNn0q/dR29sv85E+XqHYKo8yWPuosB8zPC8X+KNFW6vB0XxFQ6KbFVJ8hYux8sov4yd0G4xjqrVvp9MoxFN6SCmUspNQMLHUaqvfN9Z0y7HlhjeSarue71rRbg9Z9FB75L+Td3+EaH3uZIyjwkfrKh2QL5uRf+Fb3+Yn3JV+2n+G3+ecviA7ljlXQDvN4eQ8/wAJ9OVAAB5ADcnf57m58yZkzBAAB5ADmZjTp/WOrfcB4Dy/H8KkH1KZvdtW5eC+n9//AMmJYv3TZebcz5D+/wAvEPzn7H83/j+PpvJgGCIALAWEziJJIiIgGJF95rXDoDcKoPiAJtvPLYvpth0Yizuo3ZctvUXIuJSeSEP7mb4OzZc7axRbroSenXB/peCrUgLvlz0/+YnaUe9svoxmv4ecY+lYGi5N3UdW/jnTS58yMrfvS44ZxCniKS1aLh6bXsw8iQR6gggjxE8X8O/yWN4phh+bWuKijwNTOSPkEH7s3WsGumv2KrWEk+Wv2fvuOgxETMyEREAREQBERAEREAREQBERAMSL6GRXw1hZbFfsNqvsfq/eNNhJkQCuBJuo101p1N7eTa3HrceYmntsStNuq8VezNbxUagcrNdlH2ZZVaQYWI9ORB8QRqD6SNUUgWcZ1GoI76+dhvz1XXyO8smTZrp0qaDKUyb9q51vqSau+pP1rEySKbjuvceDD8GFre4MwQsBdTnX1Gb57Hw1sfOYqq69XdWGpVdD/A2mvjz8YbBuFZh3kPqpDD+jH5Sm6XJSrYOulQ9nLnKm6serIqAC4v8AUEm0ccwIUjrPBk0J8QVawVhzF7ncDcDfisTSKMKjBFIIOfsaEWPetLQbhJS6NPQELh3BKGHpMuCWlScrYVMvWG/IscwZ/QtIuD4eaGKRnrVarVadVXeowsWU03QKigIgA67RR633k/goWrh6Duqsxp07mwPayi+vreeM4fiMbiOJKGw4p4ajVqXBpBRlCVKYY1CLsTmBABtqDawvNsalJ5Llsnd8+W+7+l0yrOgHFp9tb+AIJ+Q1j6Uvg/8Ahv8A5ZsLBd7AaDw1JsB+E2Tm09/ok0Uk+s3ePyA8B/fn8gMfzn7H83/j+Ppuftm31Bv+sfs+nj8vGSZUgRESSRERAEREA0YqnnR1+0rD5gico4/wZL9pNRoUK1HUfurpf1nXpEr4NHsSO0NmBKsP3hrOfLhc5KSeqOrs/afhRlB7P376bo8x0UC4DAGpXPVpmeoFZQhVTay5L3zG1wCb9r2mfQDAOFr4uqmSpiqnWZbaimCxS/8AE3taXg4JRzBmU1GXumqzVCvpnJtLOdMXUa6nNJtyu/36sRESCBERAEREAREQBERAEREAREQBERAEREAj1KGuZTlbxGx9Rz/HwImqoQbCotvBht7Nup9bb2BMmz4RJsFVWwTLexzU+dMdk6bMCNyPDS+koul/R5salFBWFHqybq6dlrgBSADYsADoCe8dp6nqCv5s2H2T3fbmvtp5R9IGzjLfTXun0bY+h18ppjyyhJTjugRODcGp4ehToqScgtmuVZjuScp8SdOUndR4Mw/eJ/G8+DCqO7df2TYfw937o6txs4P7S3P3ED7pRycnbYI+KRdFqZijdm+awzHQKbWtfkfHTci+P+yB+mr/AOK024mi7qVOWx0NtLjmLFW3kH/Y4+3V/wDmYj+8vGVc/fqirLlVAFhsJlETIsIiIAiIgCIiAIiIAiIgCIiAInyfYAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAJ8In2IBHGGA7hK+Q7v8J0HtaAag3Ct6Eqf4TcffJEQCP9I8Uce1/5SZr/ACX6P/6m/wAsmRJToH//2Q=="
+        width="50"
+      />
+      <button>Asculta acum</button>
+    </header>
+    <nav>
+      <ol>
+        <li><a href="#youtube">YouTube</a></li>
+        <li><a href="#spotify">Spotify</a></li>
+        <li><a href="#soundcloud">SoundCloud</a></li>
+        <li><a href="#grooveshark">Grooveshark</a></li>
+        <li><a href="#deezer">Deezer</a></li>
+      </ol>
+    </nav>
+    <main>
+      <section>
+        <p>
+          Mai jos sunt enumerate cateva detalii despre unele dintre cele mai
+          cunoscute site-uri muzicale
+        </p>
+      </section>
+
+      <article>
+        <h1 id="youtube">YouTube</h1>
+        <h3>Generalitati</h3>
+        <a href="https://www.youtube.com/"><strong>YouTube </strong></a> este un
+        Site Web unde utilizatorii pot încărca și viziona materiale audio-video.
+        YouTube a fost creat în februarie 2005 de Chad Hurley, Steve Chen și
+        Jawed Karim. Serviciul cu sediul în San Bruno, California, folosește
+        tehnologia Adobe Flash Player pentru a expune o gamă largă de clipuri
+        video create chiar de utilizatori, incluzând și fragmente din programe
+        de televiziune sau din filme.
+        <h3>Impactul social</h3>
+        <p>
+          Până la lansarea site-ului, în 2005, existau puține metode simple de
+          încărcare a videoclipurilor pe Internet de către utilizatorii
+          neexperimentați. Cu interfața sa ușor de folosit, YouTube a făcut
+          posibil ca oricine care poate folosi un calculator să poată și încărca
+          un videoclip, care după numai câteva minute poate fi văzut de milioane
+          de persoane. Marea varietate de subiecte acoperite de YouTube a
+          transformat transmiterea videoclipurilor în una din cele mai
+          importante aplicații ale Internetului.
+        </p>
+        <h3>Logo</h3>
+        <br />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/200px-YouTube_Logo_2017.svg.png"
+          alt="logo youtube"
+          width="30%"
+        />
+        <button><a href="https://www.youtube.com/">CATRE YouTube</a></button>
+      </article>
+
+      <article>
+        <h1 id="spotify">Spotify</h1>
+        <h3>Generalitati</h3>
+        <a href="https://open.spotify.com/"><strong> Spotify </strong></a>is a
+        proprietary Swedishaudio streaming and media services provider founded
+        on 23 April 2006 by Daniel Ek and Martin Lorentzon. It is one of the
+        largest music streaming service providers, with over 456 million monthly
+        active users, including 195 million paying subscribers, as of September
+        2022. Spotify is listed (through a Luxembourg City-domiciled holding
+        company, Spotify Technology S.A.) on the New York Stock Exchange in the
+        form of American depositary receipts.
+        <h3>Platforms</h3>
+        <p>
+          Spotify has client software currently available for Windows, macOS,
+          Wear OS, Android, iOS, watchOS, iPadOS, PlayStation 4, PlayStation 5,
+          Xbox One and Xbox Series X/S game consoles. There is an official,
+          although unsupported Linux version. Spotify also offers a proprietary
+          protocol known as "Spotify Connect", which lets users listen to music
+          through a wide range of entertainment systems, including speakers,
+          receivers, TVs, cars, and smartwatches. Spotify also has a web player
+          (open.spotify.com). Offline Music listening is possible on watchOSand
+          more recently added to google's WearOS for those with premium
+          subscriptions. Unlike the apps, the web player does not have the
+          ability to download music for offline listening. In June 2017, Spotify
+          became available as an app through Windows Store.
+        </p>
+        <h3>Logo</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/220px-Spotify_logo_with_text.svg.png"
+          alt="logo Spotify"
+          width="30%"
+        />
+        <button><a href="https://open.spotify.com/">CATRE SPOTIFY</a></button>
+      </article>
+      <aside>
+        <h3>Cele mai asculatate melodii din ultimii 10 de ani</h3>
+        <ul>
+          <li>2022 - As It Was by Harry Styles</li>
+          <li>2021 - Bad Habits by Ed Sheeran</li>
+          <li>2020 - Head & Heart by Joel Corry Ft. MNEK</li>
+          <li>2019 - Dance Monkey by Tones & I</li>
+          <li>2018 - Someone You Loved by Lewis Capaldi</li>
+          <li>2017 - Shape Of You by Ed Sheeran</li>
+          <li>2016 - Say You Won't Let Go by James Arthur</li>
+          <li>2015 - Cheap Thrills by Sia</li>
+          <li>2014 - Thinking Out Loud by Ed Sheeran</li>
+          <li>2013 - Riptide by Vance Joy</li>
+          <li>2012 - Let Her Go by Passenger</li>
+        </ul>
+      </aside>
+      <article>
+        <h1 id="soundcloud">SoundCloud</h1>
+        <h3>Información general</h3>
+        <a href="https://soundcloud.com/"><strong> SoundCloud</strong></a> es un
+        servicio de retransmisión de música vía streaming que a diferencia de
+        Spotify y otras plataformas, este tiene la opción de poder subir
+        canciones y álbumes directamente, sin la necesidad de distribuidoras
+        externas.
+        <h3>Características</h3>
+        <p>
+          SoundCloud posee un sencillo reproductor en el que se puede ver la
+          forma de onda del archivo de audio. En él, los usuarios pueden dejar
+          sus comentarios, compartir el archivo y, en algunos casos,
+          descargarlo. Este reproductor se puede insertar en páginas webs o en
+          otras redes sociales de modo que cuando se hace una actualización en
+          SoundCloud aquellos sitios que enlacen el reproductor quedarán
+          actualizados.
+        </p>
+        <h3>Logo</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Soundcloud_logo.svg/245px-Soundcloud_logo.svg.png"
+          alt="logo SoundCloud"
+          width="30%"
+        />
+        <button><a href="https://soundcloud.com/">CATRE SOUNDCLOUD</a></button>
+      </article>
+
+      <article>
+        <h1 id="grooveshark">Grooveshark</h1>
+        <h3>Generalitati</h3>
+        <a href="https://groovesharks.org/"><strong> Grooveshark</strong></a>
+        was a web-based music streaming service owned and operated by Escape
+        Media Group in the United States. Users could upload digital audio
+        files, which could then be streamed and organized in playlists. The
+        Grooveshark website had a search engine, music streaming features, and a
+        music recommendation system
+        <h3>Detalii comerciale</h3>
+        <p>
+          On April 30, 2015, Grooveshark abruptly shut down as part of a
+          settlement between the service and Universal Music Group, Sony Music
+          Entertainment, and Warner Music Group.
+        </p>
+        <h3>Logo</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Grooveshark_logo_horizontal.svg/220px-Grooveshark_logo_horizontal.svg.png"
+          alt="logo Groovershark"
+          width="30%"
+        />
+        <button>
+          <a href="https://groovesharks.org/">CATRE GROVERSHARK</a>
+        </button>
+      </article>
+
+      <article>
+        <h1 id="deezer">Deezer</h1>
+        <h3>Generalitati</h3>
+        <a href="https://www.deezer.com/ro"><strong>Deezer </strong></a> is a
+        French online music streaming service. It allows users to listen to
+        music content from record labels, as well as podcasts on various devices
+        online or offline.
+        <h3>Istoric</h3>
+        <p>
+          From a French tech start-up created in 2007, Deezer has become one of
+          the earliest French unicorns and the second largest independent music
+          streaming platform globally¹. Deezer is the home of music for fans and
+          artists alike, and has developed a scalable and differentiated global
+          platform, supported by its state-of-the-art product, and successful
+          hybrid B2B/B2C business model. With its leading technological and
+          research capabilities, unique partnership DNA, and longstanding
+          relationships within the music ecosystem, Deezer is ideally positioned
+          to play a key role in the continued development of the booming music
+          streaming market.
+        </p>
+        <h3>Logo</h3>
+        <br />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Deezer_logo.svg/220px-Deezer_logo.svg.png"
+          alt="logo Deezer"
+          width="30%"
+        />
+        <button><a href="https://www.deezer.com/ro">CATRE DEEZER</a></button>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Continut preluat de pe
+        <a href="https://ro.wikipedia.org/wiki/"><strong>WIKIPEDIA</strong></a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+/*
+ #F14902 - portocaliu
+ #303030 - gri
+ #1C191A - negru
+ #F5DDCE - bej
+ #F6E7D8 - text
+ */
+
+/* ===================================================
+                        GENRAL                         
+==================================================== */
+
+* {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* ===================================================
+                        flex-contact                        
+==================================================== */
+
+.flex-container {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  /* height: 100vh; */
+}
+.contact {
+  background-color: #f5ddce;
+  color: #1c191a;
+  width: 40%;
+}
+
+.about {
+  background-color: #1c191a;
+  color: #f6e7d8;
+  width: 60%;
+}
+
+.portrait {
+  width: 100%;
+  height: 600px;
+  background-image: url(https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-4.0.3&ixid=mnwxmja3fdb8mhxzzwfyy2h8ntj8fhbvcnryywl0fgvufdb8fdb8fa%3d%3d&auto=format&fit=crop&w=600&q=60);
+  background-position: center bottom 70%;
+}
+
+.contact-elements:nth-child(2) {
+  color: #f14902;
+  padding: 7rem 5em 3rem;
+}
+
+.contact-elements:nth-child(2),
+.contact-elements:nth-child(3) {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.contact h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding-top: 1rem;
+  color: #1c191a;
+}
+
+.contact hr {
+  width: 100%;
+  border-top: 1px solid #1c191a;
+}
+
+.contact h2 {
+  font-size: 2.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 3rem;
+  text-align: left;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 0.8rem;
+}
+i {
+  color: #f14902;
+  display: inline-block;
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+
+.contact li p {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.fa-instagram {
+  padding-left: 1px;
+  font-size: 2.6rem;
+}
+
+.fa-location-dot {
+  padding-left: 4px;
+}
+
+/* ===================================================
+                        flex-about                        
+==================================================== */
+
+.about-elements {
+  width: 70%;
+  margin: auto;
+}
+
+.about .line {
+  /* border-top: 1px solid #f14902; */
+  width: 100%;
+  margin: 4rem auto 0;
+  height: 1px;
+  background-color: #f14902;
+  /* padding-top: 2rem; */
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.about h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.about p,
+.about li {
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+
+.expertise-flex-container {
+  display: flex;
+}
+
+.cerc-portocaliu {
+  width: 20px;
+  height: 20px;
+  background-color: #f14902;
+  border-radius: 50%;
+}
+
+.expertise-flex-element-circles {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.flex-circles-row {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+.cerc-portocaliu-gol {
+  width: 16px;
+  height: 16px;
+  background-color: #1c191a;
+  border: 2px solid #f14902;
+  border-radius: 50%;
+}
+
+.cerc-portocaliu,
+.cerc-portocaliu-gol {
+  margin-left: 0.8rem;
+}
+.expertise-flex-element-paragraphs p {
+  margin-bottom: 0.6rem;
+}
+/* ===================================================
+                        Media-query                        
+==================================================== */
+@media screen and (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .contact,
+  .about {
+    width: 100%;
+  }
+  .portrait {
+    background-repeat: no-repeat;
+  }
+}

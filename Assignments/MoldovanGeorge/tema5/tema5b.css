@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+html:nth-child(1) {
+  background-color: rgb(122, 127, 132);
+}
+
+body main {
+  width: 70vw;
+  margin: 100px auto;
+}
+
+main::first-line {
+  color: pink;
+}
+
+section > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+main > :nth-child(2) {
+  color: rgb(0, 0, 0);
+}
+
+main .text-section :nth-child(3) {
+  color: aliceblue;
+}
+
+.text-section > :last-child {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+main > :nth-child(2) {
+  width: 100%;
+  margin: auto;
+}
+main > :nth-child(2) > * {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+section div {
+  margin: 30px 0;
+}
+
+section div input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* section:first-child >  */
+section div:first-child input {
+  border: 4px rgb(222, 222, 222) solid;
+}
+
+section div:nth-child(2) input:invalid {
+  border: 4px rgb(255, 68, 68) solid;
+}
+
+section div:nth-child(3) input:valid {
+  border: 4px rgb(115, 255, 185) solid;
+}

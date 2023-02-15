@@ -226,16 +226,25 @@ for(let i=1; i<=n; i++){
 // Input: [81, 72, 43, 72, 81, 99, 99, 100, 12, 54]
 // Expected Result: [72, 81, 99]
 
-/* const myNumbersArray=prompt("Give an array nums where each integer is between 1 and 100, separated by commas, to find the duplicates: ").split(",");
-let duplicatesArray=[];
-for(let i=0; i<myNumbersArray.length-1; i++){
-    for(let j=i+1; j<myNumbersArray.length; j++){
-        if(myNumbersArray[i]==myNumbersArray[j] && !duplicatesArray.includes(myNumbersArray[i])){
-            duplicatesArray.push(myNumbersArray[i])
-        }
-    }
+const myNumbersArray = prompt(
+  "Give an array nums where each integer is between 1 and 100, separated by commas, to find the duplicates: "
+).split(",");
+let duplicatesArray = [];
+const myNumbersMap = new Map();
+myNumbersArray.forEach((element) => {
+  if (myNumbersMap.has(element)) {
+    myNumbersMap.set(element, myNumbersMap.get(element) + 1);
+  } else {
+    myNumbersMap.set(element, 1);
+  }
+});
+function duplicates(value, key, map) {
+  if (value > 1 && !duplicatesArray.includes(key)) {
+    duplicatesArray.push(key);
+  }
 }
-console.log(duplicatesArray.sort()); */
+myNumbersMap.forEach(duplicates);
+console.log(duplicatesArray.sort());
 
 // Task 10
 // You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find Nemo]!".
@@ -249,16 +258,11 @@ console.log(duplicatesArray.sort()); */
 // Input: "Where is the fish ?"
 // Expected Result: "I can't find Nemo :("
 
-let myWordsArray=prompt("Enter a sentence and let me find if the word 'Nemo' is included:").toLowerCase().split(" ");
+/* let myWordsArray=prompt("Enter a sentence and let me find if the word 'Nemo' is included:").toLowerCase().split(" ");
 let index=0;
-myWordsArray.forEach(element => {
-    if(element=="nemo"){
-        index=myWordsArray.indexOf("nemo")+1
-    }
-});
+index=myWordsArray.indexOf("nemo")+1;
 if(index!==0){
     console.log(`I found Nemo at ${index}!`);
 } else {
     console.log("I can't find Nemo :(");
-}
-
+} */

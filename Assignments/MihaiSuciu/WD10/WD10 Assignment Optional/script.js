@@ -258,7 +258,7 @@ bills.forEach((element) => {
 console.log(flag); */
 //Complexitate Task 4: O(n) | get, set, has sunt O(1) pt ca in spate avem HashTable
 
-// Task 5
+// Task 5 - versiun for..of
 // Take an array and return the most frequently occurring element contained within it.
 
 // Example:
@@ -269,7 +269,7 @@ console.log(flag); */
 // Input: [false, "up", "down", "left", "right", true, false]
 // Expected Result: false
 
-let elementsArr = [false, "up", "down", "left", "right", true, false];
+/* let elementsArr = [false, "up", "down", "left", "right", true, false];
 const elementsMap = new Map();
 
 elementsArr.forEach((element) => {
@@ -288,5 +288,28 @@ for(const[key, value] of elementsMap){
     maxKey=key;
   }
 }
-console.log(maxKey," : ",maxValue);
+console.log(maxKey," : ",maxValue); */
 //Complexitate Task 5: O(n)
+
+// Task 5 - versiun forEach
+let elementsArr = [false, "up", "down", "left", "right", true, false];
+const elementsMap = new Map();
+
+elementsArr.forEach((element) => {
+  if (!elementsMap.has(element)) {
+    elementsMap.set(element, 1);
+  } else {
+    elementsMap.set(element, elementsMap.get(element) + 1);
+  }
+});
+console.log(elementsMap);
+let maxValue = 0;
+let maxKey = 0;
+elementsMap.forEach((value, key) => {
+  if (maxValue < value) {
+    maxValue = value;
+    console.log(maxValue);
+    maxKey = key;
+  }
+});
+console.log(`max freqvency is: ${maxKey} : ${maxValue}`);

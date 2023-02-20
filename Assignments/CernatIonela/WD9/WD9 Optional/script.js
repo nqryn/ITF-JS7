@@ -244,6 +244,18 @@ console.log(convertPinToDance("3856"));
 // Input: 3
 // Expected Result: [1, 2, 3],[2, 4, 6],[3, 6, 9]
 
+for (let i = 0; i < n; i++) {
+  table.push(new Array(n));
+}
+
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n; j++) {
+    table[i-1][j-1] = i * j;
+  }
+}
+
+console.log(multiplicationTable(2));
+console.log(multiplicationTable(3));
 
 
 // Task 9

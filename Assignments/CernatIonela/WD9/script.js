@@ -41,17 +41,16 @@ console.log(firstElement);
 // Input: 83, 34
 // Expected Result: false
 
-let a=22,b=15;
+let a = 22,b = 15;
 if ( a+b < 50 ) {
   console.log(true);
 } else {
   console.log(false);
 }
 
- a=83, 
- b=34;
+ a=83, b=34;
 
-if ( a+b < 100 ) {
+if ( a + b < 100 ) {
   console.log(true);
 } else {
   console.log(false);
@@ -77,18 +76,27 @@ if ( a+b < 100 ) {
 // Expected Result: 22
 
 
-let animals = [2, 3, 5];
-let chickensLeg = animals[0]*2;
-let cowsLeg = animals[1]*4;
-let pigsLeg = animals[2]*4;
-console.log(`${chickensLeg+cowsLeg+pigsLeg} legs`);
+let ferma1 = [2, 3, 5],
+ferma2 = [1, 2, 3];
 
-animals = [1, 2, 3];
-chickensLeg = animals[0]*2;
-cowsLeg = animals[1]*4;
-pigsLeg = animals[2]*4;
-console.log(`${chickensLeg+cowsLeg+pigsLeg} legs`);
+let animalsLegs = {
+    chickens: 2,
+    pigs: 4,
+    cows: 4
+};
 
+let nrOfLegsF1 = 
+    ferma1[0] * animalsLegs.chickens + 
+    ferma1[1] * animalsLegs.cows + 
+    ferma1[2] * animalsLegs.pigs;
+
+let nrOfLegsF2 = 
+    ferma2[0] * animalsLegs.chickens + 
+    ferma2[1] * animalsLegs.cows + 
+    ferma2[2] * animalsLegs.pigs;
+
+console.log(nrOfLegsF1);
+console.log(nrOfLegsF2);
 
 
 // Task 5

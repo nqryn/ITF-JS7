@@ -9,18 +9,21 @@
 // Input: [2, 55, 60, 97, 86]
 // Expected Result: "Boom!"
 
-function sevenBoom(arr) {
-  if (arr.join("").includes("7")) {
-    return "Boom!";
-  } 
-  else {
-    return "There is no 7 in the array";
+function containsSeven(nums) {
+  for (const num of nums) {
+    if (num.toString().includes('7')) {
+      return "Boom!";
+    }
   }
+  return "There is no 7 in the array";
 }
-console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
-console.log(sevenBoom([8, 6, 33, 100])); 
-console.log(sevenBoom([2, 55, 60, 97, 86])); 
+const arr1 = [1, 2, 3, 4, 5, 6, 7];
+const arr2 = [8, 6, 33, 100];
+const arr3 = [2, 55, 60, 97, 86];
 
+console.log(containsSeven(arr1)); 
+console.log(containsSeven(arr2)); 
+console.log(containsSeven(arr3));
 
 // Task 2
 // Given an array of strings, return an array with only the strings that have numbers in them.
@@ -34,25 +37,19 @@ console.log(sevenBoom([2, 55, 60, 97, 86]));
 // Input: ["this is a test", "test"]
 // Expected Result: []
 
-function findStringsWithNumbers(arr) {
+function stringsWithNumbers(arr) {
   let result = [];
-  
   for (let str of arr) {
-    if (/\d/.test(str)) {
+    if (/\d/.test(str)) {  
       result.push(str);
     }
   }
-  
   return result;
 }
+console.log(stringsWithNumbers(["1a", "a", "2b", "b"]));
+console.log(stringsWithNumbers(["abc", "abc10"]));  
+console.log(stringsWithNumbers(["this is a test", "test"]));
 
-const arr1 = ["1a", "a", "2b", "b"];
-const arr2 = ["abc", "abc10"];
-const arr3 = ["this is a test", "test"];
-
-console.log(findStringsWithNumbers(arr1));
-console.log(findStringsWithNumbers(arr2)); 
-console.log(findStringsWithNumbers(arr3));
 
 // Task 3
 // Given a list of hours, return the total weekly salary.
@@ -115,17 +112,14 @@ console.log(calculateWeeklySalary([10, 10, 10, 0, 8, 0, 0]));
 function mauricesPlan(maurice, steve) {
   let mauriceWins = 0;
   
-  // Round 1: Maurice sacrifices his slowest snail against Steve's fastest
   if (maurice[0] < steve[2]) {
     mauriceWins++;
   }
   
-  // Round 2: Maurice uses his middle snail against Steve's slowest
   if (maurice[1] < steve[0]) {
     mauriceWins++;
   }
   
-  // Round 3: Maurice uses his fastest snail against Steve's middle
   if (maurice[2] < steve[1]) {
     mauriceWins++;
   }
@@ -135,9 +129,6 @@ function mauricesPlan(maurice, steve) {
 
 console.log(mauricesPlan([3, 5, 10], [4, 7, 11]));
 console.log(mauricesPlan([6, 8, 9], [7, 12, 14])); 
-
-
-
 
 
 // Task 5
@@ -214,26 +205,7 @@ console.log(findBrokenKeys("beethoven", "affthoif5"));
 // Input: "3856"
 // Expected Result: [ "Slide", "Arabesque", "Pop", "Arabesque" ]
 
-function convertPinToDance(pin) {
-  const danceMoves = ["Shimmy", "Shake", "Pirouette", "Slide", "Arabesque", "Pop", "Spin", "Jump", "Mambo", "Salsa"];
 
-  if (!/^\d{4}$/.test(pin)) {
-    return ["Invalid input."];
-  }
-
-  const result = [];
-
-  for (let i = 0; i < pin.length; i++) {
-    const digit = Number(pin[i]);
-    const index = (digit + i) % danceMoves.length;
-    result.push(danceMoves[index]);
-  }
-
-  return result;
-}
-
-console.log(convertPinToDance("0000")); 
-console.log(convertPinToDance("3856")); 
 
 // Task 8
 // Given an integer "n", return the multiplication table of 1 to n numbers up to nth multiple.
@@ -267,6 +239,21 @@ console.log(multiplicationTable(3));
 // Input: [81, 72, 43, 72, 81, 99, 99, 100, 12, 54]
 // Expected Result: [72, 81, 99]
 
+function findDuplicateNumbers(nums) {
+  
+  for (const num of nums) {
+    count[num] = (count[num] || 0) + 1;
+    if (count[num] === 2) {
+      duplicates.push(num);
+    }
+  }
+  return duplicates.sort((a, b) => a - b);
+}
+const duplicates1 = findDuplicateNumbers(arr1);
+console.log(duplicates1);
+
+const duplicates2 = findDuplicateNumbers(arr2);
+console.log(duplicates2);
 
 
 // Task 10
@@ -279,3 +266,16 @@ console.log(multiplicationTable(3));
 // Input: "NEMO is me"
 // Expected Result: "I found Nemo at 1!"
 // Input: "Where is the fish ?"
+
+function findNemo(sentence) {
+  const words = sentence.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].toLowerCase() === "nemo") {
+      return `I found Nemo at ${i + 1}!`;
+    }
+  }
+  return "I can't find Nemo :(";
+}
+
+console.log(findNemo("I am finding Nemo !"));
+console.log(findNemo("NEMO is me"));

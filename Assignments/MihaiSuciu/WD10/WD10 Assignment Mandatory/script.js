@@ -19,6 +19,16 @@ while(n>0){
 console.log(myArr); */
 //Complexitate Task 1: O(n) pt ca while itereaza pe tot n-ul, iar arr.push() este O(1)
 
+/* //Versiunea 2 (cu obiecte)
+const obj1 = {a: 1, b: 2};
+console.log(Object.entries(obj1));
+
+const obj2 = {shrimp: 15, tots: 12};
+console.log(Object.entries(obj2));
+
+const obj3 = {};
+console.log(Object.entries(obj3)); */
+
 // Task 2
 // Arrays can be mixed with various types. Your task is to sum all the number elements in the given array.
 // Take an array and return the sum of all numbers in the array.
@@ -305,7 +315,7 @@ givenStringsArray.forEach((element) => {
 // Input: "wall street journal"
 // Expected Result: "allway eetstray ournaljay"
 
-const vowelArr = ["a", "e", "i", "o", "u"];
+/* const vowelArr = ["a", "e", "i", "o", "u"];
 let fragment1 = "";
 let fragment2 = "";
 let pigLatinSentence;
@@ -329,5 +339,5 @@ inputSentenceArr.forEach((element) => {
   }
 });
 pigLatinSentence = pigLatinSentenceArr.join(" ")
-console.log(pigLatinSentence);
+console.log(pigLatinSentence); */
 //Complexitate Task 10: O(n^3) pentru ca for+for+includes()

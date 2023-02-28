@@ -108,42 +108,74 @@ console.log(sumOfArrays([1, 1, 2, 2, 3, 3], [3, 3, 2, 2, 1, 1]));
 /* 41. Write a JavaScript function to compute the union of two arrays ( don’t
 add duplicates ) */
 
-const unionOfArrays = (arr411, arr412) => Array.from(new Set(arr411.concat(arr412)));
+const unionOfArrays = (arr411, arr412) =>
+    Array.from(new Set(arr411.concat(arr412)));
 console.log(unionOfArrays([1, 1, 2, 2, 3, 3], [3, 3, 2, 2, 1, 1]));
 
 /* 42. Write a JavaScript function to remove a specific element from an array. */
 
-const removeElement = (arr42, el) => arr42.filter(item => item !== el);
+const removeElement = (arr42, el) => arr42.filter((item) => item !== el);
 console.log(removeElement([1, 2, 3, 4, 5, 6, 7, 8, 9], 5));
 
 /* 43. Write a JavaScript function to check if an array contains a specific
 element. */
 
 const containsElement = (arr43, el) => arr43.includes(el);
-console.log(containsElement([1, 2, 3, 4, 5, 6, 7, 8, 9], 5)); 
+console.log(containsElement([1, 2, 3, 4, 5, 6, 7, 8, 9], 5));
 
 /* 44. Write a JavaScript function to get a random item from an array. */
 
-const getRandomElement = arr44 => arr44[Math.floor(Math.random() * arr44.length)];
+const getRandomElement = (arr44) =>
+    arr44[Math.floor(Math.random() * arr44.length)];
 console.log(getRandomElement([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 /* 45. Write a JavaScript function to move an array element from one position
 to another. */
 
-const moveElement = (arr45, fromIdx, toIdx) => { 
+const moveElement = (arr45, fromIdx, toIdx) => {
     arr45.splice(toIdx, 0, arr45[fromIdx]);
     arr45.splice(fromIdx, 1);
     return arr45;
-}
+};
 console.log(moveElement([1, 2, 3, 4, 5, 6, 7, 8, 9], 2, 9));
 
 /* 46. Write a JavaScript function to filter false, null, 0 and blank values from
 an array. */
-const filterFalse = arr46 => arr46.filter((el) => ![false, null, 0, "", " ", "0"].includes(el));
+const filterFalse = (arr46) =>
+    arr46.filter((el) => ![false, null, 0, "", " ", "0"].includes(el));
 console.log(filterFalse([null, 0, "A", false, "0", 111, 11, " ", ""]));
 
 /* 47. Write a JavaScript function to find the unique elements from two arrays. */
 
-const uniquesFromArrays = (arr471, arr472) => Array.from(new Set(arr471.concat(arr472)));
+const uniquesFromArrays = (arr471, arr472) =>
+    Array.from(new Set(arr471.concat(arr472)));
 console.log(uniquesFromArrays([1, 1, 2, 2, 3, 3], [3, 3, 2, 2, 1, 1]));
 
+/* 48. Write a JavaScript function to combine the numbers of a given array into
+an array containing all combinations. */
+
+const combineNumbers = (arr48) => {
+    let finalArray = [];
+    for (let i = 0; i < arr48.length - 1; i++) {
+        for (let j = i + 1; j < arr48.length; j++) {
+            let combinationsArray = [];
+            combinationsArray.push(arr48[i]);
+            combinationsArray.push(arr48[j]);
+            finalArray.push(combinationsArray);
+        }
+    }
+    return finalArray;
+};
+console.log(combineNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+/* 49. Write a JavaScript function that converts a specified number to an array
+of digits. */
+
+const turnToDigitsArr = (myNumber) => myNumber.toString().split("");
+console.log(turnToDigitsArr(123456789));
+
+/* 50. Write a JavaScript function that filters out the element(s) of a given
+array, that have one of the specified values. */
+
+const filterArray = (myArr, elem) => myArr.filter((item) => item != elem);
+console.log(filterArray([1, 2, 3, 4, 5, 6, 7, 8, 9], 5));

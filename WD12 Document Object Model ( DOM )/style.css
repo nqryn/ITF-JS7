@@ -1,0 +1,103 @@
+.third-element {
+  background-color: antiquewhite;
+  padding: 50px;
+}
+
+p {
+  width: 80%;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+#second-element {
+  background-image: url("https://png.pngtree.com/png-clipart/20220215/ourmid/pngtree-blue-sky-and-white-clouds-png-image_4391818.png");
+  background-size: contain;
+  opacity: 60%;
+}
+
+/* * {
+    color: #389c59;
+  } */
+
+a {
+  display: block;
+}
+
+a[href] {
+  color: blue;
+}
+
+a[href="#"] {
+  color: coral;
+}
+a[href="#"],
+a[href*="george"] {
+  color: chartreuse;
+}
+
+.grandfather div {
+  color: rgb(153, 28, 68);
+}
+
+.grandfather > div {
+  border: #000 2px solid;
+}
+div p {
+  background-color: rgb(194, 194, 22);
+}
+
+.brother ~ .sister {
+  background-color: aqua;
+  padding: 10px;
+}
+.brother + .sister {
+  background-color: blue;
+}
+
+a:hover {
+  background-color: #389c59;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: line-through;
+}
+
+input {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:required + label {
+  font-weight: bold;
+  color: red;
+}
+.mama > div:nth-child(3),
+.mama > div:nth-child(5),
+.mama > div:nth-child(7) {
+  background-color: blue;
+}
+.mama > div:first-child,
+.mama > div:last-child {
+  background-color: rebeccapurple;
+}
+
+/* :root {
+    background-color: red;
+  } */
+button {
+  background-color: #389c59;
+  width: 100px;
+}
+
+button:active {
+  background-color: aliceblue;
+}

@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(197, 194, 194);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(toDo.png);
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+#pushElement {
+  text-align: center;
+}
+
+ol {
+  list-style-position: inside;
+  margin-left: 5rem;
+  color: brown;
+  margin-top: 5rem;
+}
+
+#addElement {
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  margin-top: 2rem;
+}
+
+/* https://getcssscan.com/css-buttons-examples*/
+#btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a93636;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 10px;
+}
+
+#btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}

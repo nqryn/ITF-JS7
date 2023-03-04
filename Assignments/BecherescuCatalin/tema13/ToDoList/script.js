@@ -18,6 +18,7 @@ btn.addEventListener("click", function () {
     li.remove();
   });
 });
+
 addElement.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     const li = document.createElement("li");

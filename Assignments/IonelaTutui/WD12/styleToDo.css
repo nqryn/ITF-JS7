@@ -1,81 +1,78 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: cursive sans-serif;
+S* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive sans-serif;
 }
 
-body{
-    height: 100vh;
-    background-color:grey;
-    display: flex;
-    flex-direction: column;
-   
+body {
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    padding: 2rem 1rem;
-    width: 100%;
-    margin: 0 auto;
-    }
- 
-.container{
-    width: 50%;
-    display: flex;
-        }
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
 
- header h1 {
+.container {
+  width: 50%;
+  display: flex;
+}
+
+header h1 {
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 1rem;
-         }
+}
 
-input, button {
-   appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-        }
-       
- input {
- background-color:rgb(245, 220, 224);
- padding: 1rem;
- border-radius: 1rem;
- margin-right: 1rem;
- font-size: 1.25rem;
-     }
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
 
-  #addToDo{
-    color: rgb(105, 102, 102);
-    font-size: 1.25rem;
-    font-weight: 500;
-    cursor: pointer;
-    background-color:rgb(245, 220, 224);
-    border-radius: 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;    
- }
+input {
+  background-color: rgb(245, 220, 224);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
 
- main{
-   flex: 1 1 0%;
-   padding: 2rem 1rem;
-   min-width: 800px;
-   width: 100%;
-   margin: 0 auto;
-    }
+#addToDo {
+  color: rgb(105, 102, 102);
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(245, 220, 224);
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
 
- ul {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-background-color: rgb(240, 240, 240);
-padding: 1rem;
-border-radius: 1rem;
-margin-bottom: 1rem;
-font-size: 1.25rem;
-color: rgb(71, 71, 71);
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  min-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-      }
-        
- 
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: rgb(71, 71, 71);
+}

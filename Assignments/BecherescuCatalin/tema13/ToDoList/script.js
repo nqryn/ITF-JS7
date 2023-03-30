@@ -17,7 +17,16 @@ btn.addEventListener("click", function () {
     // li.style.textDecoration = "line-through red";
     li.remove();
   });
+
+  localStorage.setItem("ol", ol.innerHTML);
 });
+
+const saved = localStorage.getItem("ol");
+console.log(saved);
+
+// if (saved) {
+//   ol.innerHTML = saved;
+// }
 
 addElement.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {

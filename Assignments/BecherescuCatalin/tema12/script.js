@@ -50,6 +50,9 @@ console.log(getCurrentDate());
 // Test data: getNumberOfDays(2)
 // Expected Output : March has 31 days.
 
+const getNumberOfDays = (myYear, myMonth) =>
+  new Date(myYear, myMonth, 0).getDate();
+console.log(getNumberOfDays(2023, 12));
 //
 //
 
@@ -57,8 +60,8 @@ console.log(getCurrentDate());
 // Test data: getDaysToChristmas()
 // Expected Output : There are 145 days left until next Christmas.
 
-function getDaysToChristmas() {}
-console.log(getDaysToChristmas());
+// function getDaysToChristmas() {}
+// console.log(getDaysToChristmas());
 
 //
 // 5. Write a JavaScript function to find which 1st of January falls on a

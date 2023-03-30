@@ -13,6 +13,13 @@ h1 {
   text-align: center;
 }
 
+#justDoIt {
+  list-style-position: inside;
+  margin-left: 5rem;
+  color: brown;
+  margin-top: 5rem;
+}
+
 ol {
   list-style-position: inside;
   margin-left: 5rem;
